@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>مدیریت سایت :: آکادمی مجید آنلاین</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		$('a.close').click(function(){
+			$(this).parent('div').slideUp('slow');
+			return false;
+		});
+
+		$('.del').click(function(){
+			return window.confirm('آیا مطمئن هستید ؟');
+		});
+
+		$('[name=selectAll]').change(function() {
+			var checkboxes = $(this).closest('form').find(':checkbox').not($(this));
+			if($(this).is(':checked')) {
+				checkboxes.prop('checked', 'checked');
+			} else {
+				checkboxes.removeAttr('checked');
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+<!-- Header -->
+<div id="header">
+	<div class="shell">
+		<!-- Logo + Top Nav -->
+		<div id="top">
+			<h1><a href="#">پنل آکادمی هنرهای دیجیتال مجید آنلاین</a></h1>
+			<div id="top-navigation">
+				خوش آمدید <a href="#"><strong>مجید علوی زاده</strong></a>
+				<span>|</span>
+				<a href="#">نمایش سایت</a>
+				<span>|</span>
+				<a href="#">خروج</a>
+			</div>
+		</div>
+		<!-- End Logo + Top Nav -->
+		
+		<!-- Main Nav -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="#" class="active"><span>داشبورد</span></a></li>
+			    <li><a href="#"><span>مدیریت خبرها</span></a>
+			    	<ul>
+			    		<li><a href="#">خبرها</a></li>
+			    		<li><a href="#">دسته بندی خبرها</a></li>
+			    	</ul>
+			    </li>
+			    <li><a href="#"><span>مدیریت صفحات</span></a></li>
+			    <li><a href="#"><span>مدیریت اسلایدشو</span></a></li>
+			    <li><a href="#"><span>مدیریت منوها</span></a></li>
+			    <li><a href="#"><span>مدیریت کاربران</span></a></li>
+			</ul>
+		</div>
+		<!-- End Main Nav -->
+	</div>
+</div>
+<!-- End Header -->
+
+<!-- Container -->
+<div id="container">
+	<div class="shell">
+		
+		<!-- Small Nav -->
+		<div class="small-nav">
+			<a href="#">داشبورد</a>
+			<span>&gt;</span>
+			لیست صفحات
+		</div>
+		<!-- End Small Nav -->
+		
+		<!-- Message OK -->		
+		<div class="msg msg-ok">
+			<a href="#" class="close">close</a>
+			<p><strong>پیغام موفقیت آمیز</strong></p>
+		</div>
+		<!-- End Message OK -->		
+		
+		<!-- Message Error -->
+		<div class="msg msg-error">
+			<a href="#" class="close">close</a>
+			<p><strong>پیغام خطا</strong></p>
+		</div>
+		<!-- End Message Error -->
+		<br />
+		<!-- Main -->
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			
+			<!-- Content -->
+			<div id="content">
+				
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2 class="left">لیست مقالات</h2>
+					</div>
+					<!-- End Box Head -->	
+
+					<!-- Table -->
+					<div class="table">
+						<form action="">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th width="13"><input type="checkbox" class="checkbox" name="selectAll" /></th>
+									<th width="40%">عنوان</th>
+									<th width="25%">تاریخ</th>
+									<th width="15%">توسط</th>
+									<th width="110" class="ac">عملیات</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3><a href="#">عنوان نمونه</a></h3></td>
+									<td>22 شهریور 1392 ساعت 10:12 ب.ظ</td>
+									<td><a href="#">مجید علوی زاده</a></td>
+									<td><a href="#" class="ico edit">ویرایش</a><a href="#" class="ico del">حذف</a></td>
+								</tr>
+							</table>
+							
+							
+							<!-- Pagging -->
+							<div class="pagging">
+								<div class="left" style="padding-left: 10px;"><input type="submit" class="button" value="حذف" /></div>
+								<div class="left">نمایش 1 تا 12 از 40 عدد</div>
+								<div class="right">
+									<a href="#">قبلی</a>
+									<a href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">بعدی</a>
+								</div>
+							</div>
+							<!-- End Pagging -->
+						</form>
+					</div>
+					<!-- Table -->
+					
+				</div>
+				<!-- End Box -->
+				
+				<!-- Box -->
+				<div class="box">
+					<!-- Box Head -->
+					<div class="box-head">
+						<h2>افزودن / ویرایش</h2>
+					</div>
+					<!-- End Box Head -->
+					
+					<form action="" method="post">
+						
+						<!-- Form -->
+						<div class="form">
+								<p>
+									<label>عنوان <span>(اجباری)</span></label>
+									<input type="text" class="field size1" />
+								</p>	
+								<p class="inline-field">
+									<label>دسته بندی</label>
+									<select class="field size3">
+										<option value="">-- انتخاب کنید --</option>
+									</select>
+								</p>
+								
+								<p>
+									<label>محتوا <span>(اجباری)</span></label>
+									<textarea class="field size1" rows="10" cols="30"></textarea>
+								</p>	
+							
+						</div>
+						<!-- End Form -->
+						
+						<!-- Form Buttons -->
+						<div class="buttons">
+							<input type="submit" class="button" value="ارسال" />
+						</div>
+						<!-- End Form Buttons -->
+					</form>
+				</div>
+				<!-- End Box -->
+
+			</div>
+			<!-- End Content -->
+			
+		</div>
+		<!-- Main -->
+	</div>
+</div>
+<!-- End Container -->
+
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+		<span class="right">&copy; 2014 - MajidOnline Academy</span>
+		<span class="left">
+			طراحی شده توسط <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a> | فارسی شده توسط <a href="http://academy.majidonline.com" target="_blank">آکادمی مجید آنلاین</a>
+		</span>
+	</div>
+</div>
+<!-- End Footer -->
+	
+</body>
+</html>
